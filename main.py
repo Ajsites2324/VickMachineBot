@@ -32,7 +32,7 @@ async def is_admins(chat_id: int):
 
 @bot.on_message(filters.command("start"))
 async def start(client, message):
-        await message.reply_text("Hi! My name is Ishi. I'm an Artificial Intelligence\n /chatbot - [on|off]")
+        await message.reply_text("Hi! My name is Elisha. I'm an Artificial Intelligence\n /chatbot - [on|off] \n © @PAPA_BOL_SAKTEHO}")
 
 
 @bot.on_message(
@@ -75,10 +75,10 @@ async def chatboton(client, message):
             )
     is_vick = vick.find_one({"chat_id": message.chat.id})
     if not is_vick:           
-        await message.reply_text(f"Chatbot Is Already Enabled")
+        await message.reply_text(f"Chatbot Is Already Enabled baby")
     if is_vick:
         vick.delete_one({"chat_id": message.chat.id})
-        await message.reply_text(f"ChatBot Is Enable!")
+        await message.reply_text(f"ChatBot Is Enable baby!")
     
 
 @bot.on_message(
